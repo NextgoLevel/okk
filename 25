@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next Level – Bonus Pack · ARCode Visual Demo</title>
+<style>
+:root{
+  --bg:#FAF4EF;      /* marfil cálido */
+  --coral:#FF6F61;   /* coral luminoso */
+  --rose:#D8A39D;    /* oro rosa sutil */
+  --ink:#2E2E2E;     /* grafito */
+  --blue:#0077C2;    /* azul energía */
+  --muted:#8C8C8C;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+.container{max-width:1040px;margin:0 auto;padding:24px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.badge{font-size:12px;padding:6px 10px;border:1px solid var(--rose);border-radius:999px;color:var(--rose);background:#fff7f5}
+.lang{display:flex;gap:8px}
+.lang button{border:1px solid #eee;background:#fff;padding:8px 12px;border-radius:999px;cursor:pointer}
+.lang button.active{border-color:var(--coral);color:#fff;background:var(--coral)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:32px 0}
+.hero h1{font-size:42px;line-height:1.15;margin:0}
+.hero p.lead{font-size:18px;color:#444;margin:10px 0 18px}
+.cta{display:inline-flex;gap:10px}
+.btn{padding:12px 18px;border-radius:14px;border:none;cursor:pointer;font-weight:600}
+.btn-primary{background:var(--blue);color:white}
+.btn-ghost{background:white;border:1px solid #eee}
+.card{background:#fff;border:1px solid #eee;border-radius:18px;padding:20px}
+.grid{display:grid;gap:18px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.section{padding:28px 0}
+.hint{font-size:13px;color:var(--muted)}
+.kicker{color:var(--coral);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.compare .panel{background:#fff;border:1px solid #f0e8e6;border-radius:16px;padding:16px}
+.figure{aspect-ratio:9/16;background:#f7ebe7;border-radius:12px;border:1px dashed #efd6cf;display:flex;align-items:center;justify-content:center;color:#d29b94;font-weight:600}
+.notice{font-size:13px;color:#666;margin-top:8px}
+.footer{padding:32px 0;color:#666;font-size:14px}
+.hidden{display:none}
+.stage{
+  background:linear-gradient(180deg,#fff6f2, #fdeae4);
+  border:1px solid #f4d7d0;border-radius:24px;padding:18px;
+}
+.qr{font-size:12px;color:#777}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="badge">Next Level · Concept Only</div>
+      <div class="lang">
+        <button id="btn-es" class="active">ES</button>
+        <button id="btn-en">EN</button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="copy">
+        <div class="kicker" data-es>Demo Visual ARCode · Bonus Pack</div>
+        <div class="kicker hidden" data-en>ARCode Visual Demo · Bonus Pack</div>
+
+        <h1 data-es>Vende la <em>idea</em>. Inspira el <span style="color:var(--coral)">WOW</span>.</h1>
+        <h1 data-en class="hidden">Sell the <em>idea</em>. Spark the <span style="color:var(--coral)">WOW</span>.</h1>
+
+        <p class="lead" data-es>Presentamos un concepto visual para imaginar tu menú en 3D y experiencias escaneables con ARCode. <strong>No incluye ejecución técnica.</strong></p>
+        <p class="lead hidden" data-en>We present a visual concept to imagine your 3D menu and scannable ARCode experiences. <strong>Technical execution not included.</strong></p>
+
+        <div class="cta">
+          <a href="#bonus" class="btn btn-primary" data-es>Ver Bonus Pack</a>
+          <a href="#bonus" class="btn btn-primary hidden" data-en>See Bonus Pack</a>
+          <a href="#demo" class="btn btn-ghost" data-es>Solicitar Demo (concepto)</a>
+          <a href="#demo" class="btn btn-ghost hidden" data-en>Request Demo (concept)</a>
+        </div>
+        <p class="hint" data-es>Colores Pantone 2025 · Estilo minimal premium</p>
+        <p class="hint hidden" data-en>Pantone 2025 colors · Minimal premium style</p>
+      </div>
+      <div class="stage">
+        <div class="figure">9:16 — Tu imagen hero</div>
+        <p class="qr" data-es>Coloca aquí un mockup con ARCode visible</p>
+        <p class="qr hidden" data-en>Place here a mockup with visible ARCode</p>
+      </div>
+    </section>
+
+    <!-- BONUS PACK -->
+    <section id="bonus" class="section">
+      <h2 data-es>🎁 Bonus Pack para cerrar tu primera venta</h2>
+      <h2 data-en class="hidden">🎁 Bonus Pack to close your first sale</h2>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h3 data-es>10 ideas visuales</h3>
+          <h3 data-en class="hidden">10 visual ideas</h3>
+          <p data-es>Gourmet, sushi, café, fast food… listas para adaptar.</p>
+          <p data-en class="hidden">Gourmet, sushi, café, fast food… ready to adapt.</p>
+        </div>
+        <div class="card">
+          <h3 data-es>Checklist 3 pasos</h3>
+          <h3 data-en class="hidden">3‑step Checklist</h3>
+          <p data-es>Encuentra – Propón – Transforma.</p>
+          <p data-en class="hidden">Find – Offer – Transform.</p>
+        </div>
+        <div class="card">
+          <h3 data-es>Stickers Levelo 🐼</h3>
+          <h3 data-en class="hidden">Levelo Stickers 🐼</h3>
+          <p data-es>6 PNG para chat y presentaciones.</p>
+          <p data-en class="hidden">6 PNG for chat and decks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section class="section">
+      <h2 data-es>Antes vs Después</h2>
+      <h2 data-en class="hidden">Before vs After</h2>
+      <div class="compare">
+        <div class="panel">
+          <div class="kicker" data-es>Antes</div>
+          <div class="kicker hidden" data-en>Before</div>
+          <div class="figure">PDF plano</div>
+          <p class="notice" data-es>Menú estático sin interacción.</p>
+          <p class="notice hidden" data-en>Static menu without interaction.</p>
+        </div>
+        <div class="panel">
+          <div class="kicker" data-es>Después (concepto)</div>
+          <div class="kicker hidden" data-en>After (concept)</div>
+          <div class="figure">Demo 3D + ARCode</div>
+          <p class="notice" data-es>Visual 3D para inspirar el WOW.</p>
+          <p class="notice hidden" data-en>3D visual to spark WOW.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO MAKE MONEY -->
+    <section class="section">
+      <h2 data-es>Cómo ganar dinero con ARCodeComp (idea)</h2>
+      <h2 data-en class="hidden">How to make money with ARCodeComp (idea)</h2>
+      <div class="grid grid-2">
+        <div class="card" data-es>
+          <ol>
+            <li><strong>Encuentra negocios objetivo</strong> (Google Maps, ticket medio‑alto).</li>
+            <li><strong>Propón menú 3D</strong> (experiencia, deseo, ticket).</li>
+            <li><strong>Crea la demo visual</strong> (maquetas que muestren el potencial).</li>
+            <li><strong>Empaqueta y vende</strong> ($100–$500 según alcance).</li>
+            <li><strong>Promoción</strong> con “Antes vs Después”.</li>
+          </ol>
+        </div>
+        <div class="card hidden" data-en>
+          <ol>
+            <li><strong>Find target businesses</strong> (Google Maps, higher ticket).</li>
+            <li><strong>Pitch 3D menu</strong> (experience, desire, ticket).</li>
+            <li><strong>Create visual demo</strong> (mockups that show potential).</li>
+            <li><strong>Package & sell</strong> ($100–$500 depending on scope).</li>
+            <li><strong>Promote</strong> with “Before vs After”.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO REQUEST -->
+    <section id="demo" class="section">
+      <div class="card">
+        <h2 data-es>Demo visual personalizada (concepto)</h2>
+        <h2 data-en class="hidden">Personalized visual demo (concept)</h2>
+        <p data-es>Recíbela en 24–48h para presentar a clientes o publicar en redes. <strong>Vendemos la idea; la producción técnica no está incluida.</strong></p>
+        <p data-en class="hidden">Get it in 24–48h for client pitches or social posts. <strong>We sell the idea; technical production is not included.</strong></p>
+        <div class="grid grid-2" style="margin-top:10px">
+          <div>
+            <div class="figure">Imagen / video escaneando menú</div>
+            <p class="hint" data-es>Coloca aquí el mockup de “escaneo con móvil”.</p>
+            <p class="hint hidden" data-en>Place here the “phone scanning” mockup.</p>
+          </div>
+          <form style="display:flex;flex-direction:column;gap:10px">
+            <input placeholder="Tu email" style="padding:12px;border:1px solid #eee;border-radius:12px">
+            <input placeholder="Enlace a tu menú o web" style="padding:12px;border:1px solid #eee;border-radius:12px">
+            <button class="btn btn-primary" type="button" data-es>Solicitar demo (concepto)</button>
+            <button class="btn btn-primary hidden" type="button" data-en>Request demo (concept)</button>
+            <p class="hint" data-es>*Respuesta en 24–48h.</p>
+            <p class="hint hidden" data-en>*Reply in 24–48h.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p data-es>© Next Level. Todos los derechos reservados. Este material presenta un concepto. La ejecución técnica final no está incluida.</p>
+      <p class="hidden" data-en>© Next Level. All rights reserved. This material presents a concept. Final technical execution is not included.</p>
+    </footer>
+  </div>
+
+<script>
+const esBtn = document.getElementById('btn-es');
+const enBtn = document.getElementById('btn-en');
+function setLang(lang){
+  document.querySelectorAll('[data-es]').forEach(el=>el.classList.toggle('hidden', lang!=='es'));
+  document.querySelectorAll('[data-en]').forEach(el=>el.classList.toggle('hidden', lang!=='en'));
+  esBtn.classList.toggle('active', lang==='es'); 
+  enBtn.classList.toggle('active', lang==='en');
+}
+esBtn.addEventListener('click',()=>setLang('es'));
+enBtn.addEventListener('click',()=>setLang('en'));
+</script>
+</body>
+</html>
